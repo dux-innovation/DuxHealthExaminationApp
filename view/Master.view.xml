@@ -6,13 +6,13 @@
 
     <Page title="{i18n>FirstPageTitle}">
         <List
-            id="idListBeers"
-            items="{/beers}"
+            id="idList"
+            items="{/examinations}"
             mode="SingleSelectMaster"
             select="handleListSelect">
             <StandardListItem
-                title="{brewName}"
-                description="{brewerName}" />
+                title="{name}"
+                description="{patient/name}" />
         </List>
     </Page>
 

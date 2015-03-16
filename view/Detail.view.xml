@@ -8,12 +8,15 @@
         showNavButton="false"
         title="{i18n>SecondPageTitle}">
         <ObjectHeader
-            title="{brewName}"
+            title="{patient/name}"
             number="{ABV}%"
             numberUnit="ABV">
             <attributes>
-               <ObjectAttribute text="{brewType}" /> 
-               <ObjectAttribute text="{brewerName}" /> 
+               <ObjectAttribute text="{doctor/id}" /> 
+               <ObjectAttribute text="{doctor/name}" /> 
+               <ObjectAttribute text="{doctor/crm}" /> 
+               <ObjectAttribute text="{patient/id}" /> 
+               <ObjectAttribute text="{patient/name}" /> 
             </attributes>
         </ObjectHeader>
     </Page>
